@@ -1,6 +1,6 @@
 {
 	"name": "chronohook",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Simple NodeJS application that loads the daily Chrono.GG deal and sends it to a webhook to display it on a discord server.",
 	"scripts": {
 		"start": "node app/chrono.reminder.js"

@@ -49,9 +49,16 @@ function runChronoReminder () {
  * @param {any} chronoData Digested Data from sale api.
  */
 function buildWebhookJson (chronoData) {
+	var mentionId;
+	if (config.mentionId.length > 0) {
+		mentionId = ' <@&'+config.mentionId+'>'
+	} else {
+		mentionId = ''
+	}
+
 	var webhookJson = {
 		"username": "Chrono.gg",
-		"content": `Daily Chrono Reminder <@&${config.mentionId}>`,
+		"content": `Daily Chrono Reminder${mentionId}`,
 		"embeds": [
 			{
 				"author": {
