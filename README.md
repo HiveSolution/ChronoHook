@@ -1,6 +1,8 @@
 # ChronoHook
 Simple NodeJS application that loads the daily Chrono.GG deal and sends it to a webhook to display it on a discord server.
 
+![Discord Display Example](https://i.imgur.com/RYIr5fd.png)
+
 ### Install and Run
 - Download or Clone the Repo
 - run ```npm i``` to install dependencies
